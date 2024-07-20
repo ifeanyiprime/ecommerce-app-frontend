@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cont {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 460px 100px;
+    /* grid-template-areas: 
+    "main main main main"
+    "thum thum thum thum"; */
+    gap: 20px;
+}
+
+.cont > div:first-child {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+.contH {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+}
+
+.cont > div:first-of-type {
+    height: 460px;
+}
+
+
+.contH .thumT {
+    display: flex;
+    padding: 20px;
+}
+
+.contH .thumT > *  {
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* .hero {
+    clip-path: path("M412.43,441.87c-142.63,0-280.71-17.97-410.43-53.4V2h862v386.4c-156.97,35.48-308.89,53.47-451.57,53.47Z");
+    clip-path: path("M1432,452.5c-501.02,79.7-980.49,86.9-1432,0V0h1432v452.5Z");
+} */
+
+
+/* Style definition for profile modal */
+
+.modalContainer {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+
+}
+
+.modalContainer .modal {
+    width: 100px;
+    display: relative;
+}
